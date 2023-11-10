@@ -1,38 +1,625 @@
-.App {
+.maincontainer{
+  height: 120vh;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.042),rgba(0, 0, 0, 0.961)) , url(mainpic.webp);
+  background-size: cover;
+  background-position: absolute;
+  position: relative;
+  z-index: 2;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.logoimg:hover{
+ filter: drop-shadow(01px 01px 20px white)
+}
+.logo{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 10px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbaritems{
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding-top: 20px;
+
+}
+.phone{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.fa-phone{
+  font-size: 22px;
+  background-color:rgba(0, 0, 0, 0.292);
+  padding: 12px;
+  border-radius: 55px;
+}
+.number{
+  margin-left: 10px;
+}
+.fa-phone:hover{
+  cursor: pointer;
+  color:  #00917c;
+}
+.navbaritems{
+  list-style-type: none;
+}
+.links{
+  text-decoration: none;
+  margin-right: 33px;
+  font-size: 17px;
+  color: rgb(254, 251, 251);
+  font-family: 'Exo', sans-serif;
+}
+.links:hover{
+  cursor: pointer;
+  color:  white;
+  filter: drop-shadow(1px 1px 20px white)
+}
+.main{
+  position: relative;
+  top: 110px;
+  right: 20px;
   text-align: center;
+  animation: up 2s ease-in-out;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes up {
+  10%{
+    top: 500px;
+    opacity: 30%;
+  }
+  100%{
+    top: 110px;
   }
 }
+.mainname{
+  font-size: 120px;
+  font-weight: 200;
+  font-family: 'Great Vibes', cursive;
+  color: white;
+}
+.mainname:hover{
+  filter: drop-shadow(10px 10px 30px white)
+}
+.slogen{
+  color:white;
+  font-family: 'Exo', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  position: relative;
+  bottom: 90px;
+}
+.booknow{
+  color: white;
+ font-family: 'Exo', sans-serif;
+ background-color: #00917c;
+ border: 0px;
+ font-size: 20px;
+ padding: 20px;
+ width: 170px;
+ position: relative;
+ bottom: 80px;
+ border-radius: 30px;
+}
+.booknow:hover{
+  background-color: rgb(38, 204, 179);
+  transform: scale(1.08);
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+.blogposts{
+  position: relative;
+  top: 50px;
+  margin-top: 20px;
+  margin-bottom: 90px;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  color: #00917c;
+  font-size: 60px;
+}
+.blogscontainer{
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  position: relative;
+ margin-bottom: 60px;
+}
+.blog1{
+  width: 25%;
+  z-index: 4;
+  position: relative;
+  left: 60px;
+  box-shadow: 1px 1px 20px;
+  animation: blog1 1.5s 2s ease-in-out ;
+}
+@keyframes blog1 {
+  from{
+    left: -100px;
+    opacity: 50%;
+  }
+  to{
+    left: 60px;
+  }
+}
+.blog1:hover,.blog2:hover,.blog3:hover{
+  transform: scale(1.01);
+  cursor: pointer;
+}
+.blog2{
+  width: 25%;  
+  z-index: 4;
+  box-shadow: 1px 1px 20px; 
+  position: relative; 
+  animation: blog2 1.5s 2s  ease-in-out ;
+}
+@keyframes blog2 {
+  from{
+    top: 100px;
+    opacity: 50%;
+  }
+  to{
+    top: 0px;
+  }
+}
+.blog3{
+  width: 25%;
+  z-index: 4;
+  position: relative;
+  right: 60px;
+  box-shadow: 1px 1px 20px;
+  animation: blog3 1.5s 2s ease-in-out ;
+}
+@keyframes blog3 {
+  from{
+    right: -100px;
+    opacity: 50%;
+  }
+  to{
+    right: 60px;
+  }
+}
+.blogpara{
+  width:65%;
+  margin-left: 30px;
+  font-weight: 700;
+  font-family: 'Exo', sans-serif;
+}
+.fa-pen{
+  font-size: 25px;
+  color: #00917c;
+}
+.readmore{
+  color: #00917c;
+}
+.readmore:hover{
+  color: #034037;
+}
+
+
+
+
+
+
+
+
+
+.footer{
+  background-color: #00917b;
+  width: 100%;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-size: 20px;
+  justify-content: space-around;
+}
+.footer li{
+  list-style: none;
+  margin-bottom: 10px;
+}
+.sevicesfooter{
+  position: relative;
+  right: 10px;
+  color: white;
+}
+.practicefooter{
+  position: relative;
+  right: 120px;
+  color: white;
+}
+.ld{
+  font-weight: 700;
+}
+.search{
+  padding: 15px;
+  width: 300px;
+  border-radius: 10px;
+  border: 0px;
+  position: relative;
+  left: 30px;
+  top: 0px;
+  font-size: 20px;
+}
+.search:hover{
+background-color: rgba(255, 255, 255, 0.762);
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-search{
+  font-size: 23px;
+  position: relative;
+  top: 0px;
+  color: #00917c;
+ right:10px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-instagram {
+  background: orangered;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.pages{
+  position: relative;
+  display: flex;
+  position: relative;
+  top: 20px;
+}
+.copyright{
+  text-align: center;
+  background-color: #00917c;
+  margin: 0px;
+  padding-bottom: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+
+.aboutcontainer{
+  height: 120vh;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.042),rgba(0, 0, 0, 0.961)) , url(blog2.jpg);
+  background-size: cover;
+  background-position: absolute;
+  position: relative;
+  z-index: 2;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.logoimg:hover{
+ filter: drop-shadow(01px 01px 20px white)
+}
+.logoabout{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 10px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbaritems{
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding-top: 20px;
+
+}
+.phone{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.fa-phone{
+  font-size: 22px;
+  background-color:rgba(0, 0, 0, 0.292);
+  padding: 12px;
+  border-radius: 55px;
+}
+.number{
+  margin-left: 10px;
+}
+.fa-phone:hover{
+  cursor: pointer;
+  color:  #00917c;
+}
+.navbaritems{
+  list-style-type: none;
+}
+.linksabout{
+  text-decoration: none;
+  margin-right: 33px;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  font-family: 'Exo', sans-serif;
+}
+.links:hover{
+  cursor: pointer;
+  color:  white;
+  filter: drop-shadow(1px 1px 20px white)
+}
+.main{
+  position: relative;
+  top: 110px;
+  right: 20px;
+  text-align: center;
+  animation: up 2s ease-in-out;
+}
+@keyframes up {
+  10%{
+    top: 500px;
+    opacity: 30%;
+  }
+  100%{
+    top: 110px;
+  }
+}
+.mainname{
+  font-size: 120px;
+  font-weight: 200;
+  font-family: 'Great Vibes', cursive;
+  color: white;
+}
+.mainname:hover{
+  filter: drop-shadow(10px 10px 30px white)
+}
+.slogen{
+  color:white;
+  font-family: 'Exo', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  position: relative;
+  bottom: 90px;
+}
+.booknow{
+  color: white;
+ font-family: 'Exo', sans-serif;
+ background-color: #00917c;
+ border: 0px;
+ font-size: 20px;
+ padding: 20px;
+ width: 170px;
+ position: relative;
+ bottom: 80px;
+ border-radius: 30px;
+}
+.booknow:hover{
+  background-color: rgb(38, 204, 179);
+  transform: scale(1.08);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+.aboutdata{
+  width: 100%;
+  display: flex;
+margin-bottom: 200px;
+margin-top: 190px;
+justify-content: space-around;
+}
+.leftaboutdata{
+  display: flex;
+}
+.aboutimg{
+  position: relative;
+  right: 350px;
+  top: 120px;
+}
+.subabout1{
+  background-color: #00917b;
+  width: 370px;
+  height: 550px;
+  position: relative;
+  right: 45px;
+}
+.rightaboutdata{
+  width: 300px;
+}
+.pabout{
+  position: relative;
+  right: 70px;
+  top: 120px;
+  color: rgb(143, 140, 140);
+font-family: 'Exo', sans-serif;
+}
+.h1about{
+  color: #00917b;
+  position: relative;
+  right: 70px;
+  top: 120px;
+font-family: 'Great Vibes', cursive;
+font-size: 50px;
+}
+
+/* sevices section */
+/* sevices section */
+/* sevices section */
+/* sevices section */
+/* sevices section */
+
+.servicescontainer{
+  height: 120vh;
+  background-image:  linear-gradient(rgba(43, 43, 43, 0.042),rgba(55, 54, 54, 0.307)) , url(hotelstaff.jpg);
+  background-size: cover;
+  background-position: absolute;
+  position: relative;
+  z-index: 2;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.topheadingservices{
+  text-align: center;
+  margin-top: 100px;
+  color: #00917b;
+  font-size: 66px;
+font-family: 'Great Vibes', cursive;
+}
+
+.servicesup{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.servicesdown{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+.scon{
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.313);
+  width :25%;
+}
+.scon:hover{
+  transform: scale(1.03);
+}
+.serviceh1{
+  color: #00917b;
+  font-size: 30px;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+}
+.serivcep{
+  color: rgb(147, 144, 144);
+ text-align: center;
+}
+.booknows{
+  color: white;
+ font-family: 'Exo', sans-serif;
+ background-color: #00917c;
+ border: 0px;
+ font-size: 20px;
+ padding: 20px;
+ width: 170px;
+ position: relative;
+ bottom: 80px;
+ margin-top: 40px;
+ left: 43%;
+ border-radius: 30px;
+}
+.booknows:hover{
+  background-color: rgb(38, 204, 179);
+  transform: scale(1.08);
+}
+
+
+/* booking section */
+/* booking section */
+/* booking section */
+/* booking section */
+/* booking section */
+
+
+.bookingcontainer{
+  height: 120vh;
+  background-image:  linear-gradient(rgba(43, 43, 43, 0),rgba(18, 18, 18, 0.915)) , url(bookinghotel.jpg);
+  background-size: cover;
+  background-position: absolute;
+  position: relative;
+  z-index: 2;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.bookingcon{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 80px;
+  margin-left: 12%;
+  width: 75%;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.264);
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.date,select {
+  padding: 10px 40px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.datea{
+  background-color: white;
+  color: #00917b;
+  position: relative;
+  left: 60px;
+  top: 10px;
+  font-family: 'Exo', sans-serif;
+}
+.dated{
+  background-color: white;
+  color: #00917b;
+  position: relative;
+  left: 50px;
+  top: 10px;
+  font-family: 'Exo', sans-serif;
+}
+.sp{
+  color: #00917b;
+  position: relative;
+  left: 50px;
+  top: 10px;
+  font-family: 'Exo', sans-serif;
 }
